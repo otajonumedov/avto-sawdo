@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvtoSalon - Eng Yaxshi Mashinalar</title>
+    
+    <!-- Google Fonts orqali Geist shriftini ulash -->
+    <script type="text/javascript" nonce="dcbf785d0abf4046a9c4669b557" src="//local.adguard.org?ts=1761805603227&amp;type=content-script&amp;dmn=frontend-loyiha-1.vercel.app&amp;pth=%2F&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="dcbf785d0abf4046a9c4669b557" src="//local.adguard.org?ts=1761805603227&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Asosiy fon uchun video -->
+    <video autoplay muted loop id="background-video">
+        <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+        Sizning brauzeringiz video tegini qo'llab-quvvatlamaydi.
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- Header qismi (Glassmorphism effekti bilan ) -->
+    <header class="glassmorphism">
+        <div class="logo">
+            <h1>Avto<span>Salon</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Bosh Sahifa</a></li>
+                <li><a href="#cars">Avtomobillar</a></li>
+                <li><a href="#about">Biz Haqimizda</a></li>
+                <li><a href="#contact">Bog'lanish</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Mavzuni O'zgartirish</button>
+    </header>
+
+    <!-- Asosiy kontent -->
+    <main>
+        <!-- Bosh sahifa qismi -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Orzuyingizdagi Avtomobilni Toping</h2>
+                <p>Eng so'nggi modellar, ajoyib narxlar va ishonchli xizmat.</p>
+                <a href="#cars" class="cta-button">Hoziroq Ko'rish</a>
+            </div>
+        </section>
+
+        <!-- Avtomobillar bo'limi -->
+        <section id="cars">
+            <h2>Mavjud Avtomobillar</h2>
+            <div class="car-gallery">
+                <!-- Avtomobil kartalari (JS orqali dinamik qo'shiladi) -->
+            </div>
+        </section>
+
+        <!-- Biz haqimizda bo'limi -->
+        <section id="about" class="glassmorphism-section">
+            <h2>Bizning Kompaniya Haqida</h2>
+            <div class="about-content">
+                <p><strong>AvtoSalon</strong> - bu yillar davomida o'z mijozlariga eng yaxshi avtomobillarni taqdim etib kelayotgan ishonchli hamkoringiz. Bizning maqsadimiz - har bir mijozning ehtiyojiga mos keladigan, sifatli va hamyonbop transport vositasini topishga yordam berish.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>Keng Tanlov</h3>
+                        <p>Sedanlardan tortib SUVlargacha, har qanday didga mos avtomobillar.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Kafolatli Sifat</h3>
+                        <p>Barcha avtomobillarimiz texnik ko'rikdan o'tkazilgan va kafolatga ega.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Professional Xizmat</h3>
+                        <p>Tajribali mutaxassislarimiz sizga to'g'ri tanlov qilishda yordam beradi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bog'lanish bo'limi -->
+        <section id="contact">
+            <h2>Biz Bilan Bog'laning</h2>
+            <form class="contact-form glassmorphism">
+                <div class="form-group">
+                    <label for="name">Ismingiz:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Manzilingiz:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Xabaringiz:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Yuborish</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer (pastki qism) -->
+    <footer>
+        <p>&copy; 2025 AvtoSalon. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <!-- JavaScript faylini ulash -->
+     <script src="style.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
